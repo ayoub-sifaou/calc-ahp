@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AHP</title>
+    <link rel="stylesheet" href="/ahp.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-app p-3">
+                    <div class="row mx-0 mb-3">
+                        <div class="col-md-12 text-center">
+                            <h1>
+                                AHP
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row mx-0 etaPres">
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Col Name" aria-describedby="col">
+                                <div class="input-group-append">
+                                    <span class="input-group-text cursor-pointer fs-20" id="col">
+                                        <i class="fa fa-plus iconAdd" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-red"> <span>*</span><span>Minimum Matrix 3 * 3</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 etaNex d-none">
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Col Name" aria-describedby="colNext">
+                                <div class="input-group-append">
+                                    <span class="input-group-text cursor-pointer fs-20" id="colNext">
+                                        <i class="fa fa-plus iconAdd" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-red"> <span>*</span><span>Minimum Matrix 3 * 3</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mt-3">
+                        <div class="col-md-12 etaPres">
+                            <div class="tableMat table-responsive">
+                                <table class="table d-none" id="tableMatOne">
+                                    <thead class="theadMatOne">
+                                    <tr>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody class="tbodyMatOne">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-12 etaNex d-none matrixNex">
+
+                        </div>
+                        <div class="col-md-12 etaNex mt-2 d-none">
+                            <div class="row mx-0 matrixNexResult">
+
+                            </div>
+
+                            <div class="row mx-0 ahpMatrix table-responsive d-none">
+                                <div class="col-12">
+                                    <table class="table">
+                                        <thead class="ahpMatrixThead">
+                                        <tr>
+                                            <th id="firstCol" scope="col">#</th>
+                                            <th scope="col">Vecteur prioritaire global</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="ahpMatrixTbody">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-2 btnVerif d-none">
+                            <div class="col-md-3">
+                                <button id="btnVer" class="btn fs-18 fw-500 btn-secondary px-3 py-2 btn-sm">Vérifier la cohérence</button>
+                            </div>
+                        </div>
+                        <div class="row mx-0 btnNextPrevEtap w-100 mt-2 d-none">
+                            <div class="col-md-3">
+                                <button id="btnPrevEtap" class="btn w-100 fs-18 fw-500 btn-primary px-3 py-2 btn-sm">Prev</button>
+                            </div>
+                            <div class="col-md-8">
+                                <button id="calcVecteur" class="btn d-none fs-18 w-100 fw-500 btn-success px-3 py-2 btn-sm">Calculer Vecteur Prioritaire Global</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/ahp.js"></script>
+</body>
+</html>
